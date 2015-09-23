@@ -9,7 +9,7 @@ module WsChatter
     desc "Installs ws_chatter in the rails app"
 
     class_option :scope, type: :string, default: "user", desc: "Name of the (existing) model for users"
-    class_option :status_column, type: :string, default: "online", desc: "Name of the status status_column for the user model"
+    class_option :status_column, type: :string, default: "online", desc: "Name of the status column for the user model"
     class_option :messages, type: :string, default: "message", desc: "Name of the messages model"
 
     def inject_ws_chatter
