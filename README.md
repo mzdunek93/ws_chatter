@@ -1,11 +1,11 @@
-#### WsChatter
+# WsChatter
 
 WsChatter is a WebSocket-based gem for Ruby on Rails which lets you easily add a chat functionality
 to your application. WsChatter requires [Warden](https://github.com/hassox/warden) for authentication.
 The simplest way to use Warden in your application is to install devise and create a User model, which
 automatically gets used by WsChatter.
 
-#### Installation
+# Installation
 
 Run @rails generate ws_chatter:install@ to create the initializer, migration adding status column
 to the user model and migration creating the message model. Three options are available:
@@ -19,7 +19,7 @@ representing whether the user is online is stored. Default: `online`
 
 Run `rake db:migrate` after running the generator.
 
-#### Javascript API
+# Javascript API
 
 On the client side, you connect to the chat backend with the following code:
 
@@ -54,6 +54,6 @@ chatter.close()
 `chatter.send()` sends the message to the user with a given id, `chatter.read()` marks all the messages
 from a given user as read, and `chatter.close()` closes the connection.
 
-#### License
+# License
 
 MIT License.
