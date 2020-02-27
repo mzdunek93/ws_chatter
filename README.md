@@ -7,7 +7,7 @@ automatically gets used by WsChatter.
 
 # Installation
 
-Run @rails generate ws_chatter:install@ to create the initializer, migration adding status column
+Run `rails generate ws_chatter:install` to create the initializer, migration adding status column
 to the user model and migration creating the message model. Three options are available:
 
 `--scope SCOPE` changes the warden scope and the user model that the authentication is performed on. Default: `user`
